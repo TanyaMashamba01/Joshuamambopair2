@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JOSHUAMAMBO1 TECH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+    }
+
+    .btn {
+      --color: #e5f5f1;
+      --color2: rgb(0, 0, 0);
+      width: 200px;
+      padding: 0.8em 1.75em;
+      background-color: green;
+      border-radius: 6px;
+      border: .3px solid var(--color);
+      transition: .5s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 1;
+      font-weight: 300;
+      font-size: 17px;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      color: var(--color);
+      margin-bottom: 24px;
+    }
+
+    .btn::after, .btn::before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: skew(90deg) translate(-50%, -50%);
+      position: absolute;
+      inset: 50%;
+      left: 25%;
+      z-index: -1;
+      transition: .5s ease-out;
+      background-color: var(--color);
+    }
+
+    .btn::before {
+      top: -50%;
+      left: -25%;
+      transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+    }
+
+    .btn:hover::before {
+      transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+    }
+
+    .btn:hover::after {
+      transform: skew(45deg) translate(-50%, -50%);
+    }
+
+    .btn:hover {
+      color: var(--color2);
+    }
+
+    .btn:active {
+      filter: brightness(.7);
+      transform: scale(.98);
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="window.open(`/qrr`)" class="btn">QR CODE</button>
+  <button onclick="window.open(`/pair`)" class="btn">PAIR CODE</button>
+  <button onclick="window.open(`https://tinyurl.com/293fnb5q`)" class="btn">Bot Repo</button>
+  <button onclick="window.open(`https://wa.me/263716729222?text=hello,,,,JoshKing01_i_need_a_bot,,,,I'll..pay`)" class="btn">CONTACT ME</button>
+  <button onclick="window.open(`https://chat.whatsapp.com/IUAzVGi8DVX3ipWjgDO8AU`)" class="btn">JOSHKING GROUP</button>
+  <button onclick="window.open(`https://whatsapp.com/channel/0029VaraMtfFcowAKRdDdp1T`)" class="btn">MIDKING1V1 CHANNEL</button>
+  <button onclick="window.open(`https://www.tiktok.com/@joshuamambo2?_r=1&_d=ee9gkfde1fg4cg&sec_uid=MS4wLjABAAAAXfpOyrCjLJw5N4FAi4U7ktlHoNiVED9fNFpgnNDz1LnC7QC3-j2tPY1tvoHEn70a&share_author_id=7299092487556121605&sharer_language=en&source=h5_m&u_code=eb1dh78f91e49a&timestamp=1743093199&user_id=7299092487556121605&sec_user_id=MS4wLjABAAAAXfpOyrCjLJw5N4FAi4U7ktlHoNiVED9fNFpgnNDz1LnC7QC3-j2tPY1tvoHEn70a&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7485713615686240055&share_link_id=58ea7183-4aeb-4ea0-a3a3-e66c6e059572&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1`)" class="btn">Instagram</button>
+  <button onclick="window.open(`https://m.youtube.com/@joshuamambo1`)" class="btn">Youtube</button>
+  
+
+</body>
+</html>
